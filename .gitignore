@@ -1,0 +1,23 @@
+# Ignorar todo por defecto
+*
+
+# Excepto carpetas específicas
+!.gitignore
+!media/
+!venv/
+
+# Ignorar archivos y carpetas específicos dentro de media y venv si es necesario
+media/*
+!media/.gitkeep
+
+venv/*
+!venv/Lib/
+!venv/Scripts/
+!venv/pyvenv.cfg
+
+# Excluir archivos adicionales si es necesario
+*.pyc
+*.pyo
+__pycache__/
+*.log
+*.sqlite3
